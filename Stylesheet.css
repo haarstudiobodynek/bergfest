@@ -1,0 +1,461 @@
+
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(0, 0, 0);
+    min-height: 200vh;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;   
+}
+
+
+.header{
+    left: 50px;
+    position: fixed;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    }
+.sticky{
+    padding: 5px 100px;
+    background-color: #fff;
+    left: 0px;
+    transition: 0.6s;
+    top: 0px;
+
+}
+
+.header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header ul li{
+    position: relative;
+    list-style: none;
+
+}
+.header ul li a{
+    position: relative;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.6s;
+
+}
+
+.header a::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.header .logo a::after{
+    background-color: rgb(0, 0, 0);
+}
+
+
+.header a:hover::after{
+    width: 110%;
+}
+
+.logo{
+    position: relative;
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-size: 32px;
+    text-shadow: 0 0 8px white ;
+}
+
+.logo img{
+    width: 50px;
+    cursor: pointer;
+}
+
+.sticky ul li a{
+    color: #111;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.sticky .logo{
+    color: #fff;
+    -webkit-filter: invert(1);
+}
+
+.sticky a::after{
+    content: "";
+    position: absolute;
+    background-color: #111;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.sticky .logo a::after{
+    background-color: #fff;
+}
+
+.sticky .header a:hover{
+    color: #fff;
+}
+
+.sticky .header a:hover::after{
+    width: 110%;
+}
+
+#Einladung img{
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.Einladung2 img{
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.Einladung3 img{
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.Einladung3{
+    text-align: center;
+    font-size: 11px;
+}
+
+#Party{
+    margin-left: 20px;
+    text-shadow: #fff 0px 0px 5px;
+    text-align: center;
+}
+
+#Partytext{
+    font-size: smaller;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 70px;
+}
+
+#Partytext img{
+    object-fit: cover;
+    width: 80%
+}
+
+#Tickets h1{
+    text-shadow: 0px 0px 5px #fff;
+    font-size: 30px;
+}
+
+#Tickets{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.paypal-link{
+    height: 20px;
+    border: 3px solid white;
+    padding: 20px;
+    transition: all ease-in-out 0.2s;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+}
+a.paypal-link:hover{
+    box-shadow: 0 0 8px #fff ;
+
+}
+
+.maps-container{
+    display: flex;
+    justify-content: space-between;
+     width: auto;
+     height: 650px;
+     padding-right: 50px;
+ }
+
+ .maps-top{
+    text-align: center;
+    text-shadow: 0px 0px 5px #fff;
+    bottom: 0px;
+ }
+ 
+ .maps-text{
+     width: 80%;
+     margin-left: 10px;
+     color: white;
+     font-size: 27px;
+     text-align: center;
+     align-items: center;
+     font-weight: bolder;
+     margin-top: 130px;
+     margin-bottom: auto;
+     margin-left: 70px;
+     margin-right: 70px;
+ }
+ 
+ .maps-image{
+     border: 0;
+     height: 400px;
+     width: 100%;
+     margin-right: 80px;
+     margin-top: 0px;
+     margin-bottom: auto;
+ 
+ }
+ 
+ 
+@media (max-width: 900px){
+    
+    html{
+        overflow-x: hidden;
+    } 
+
+    .header label{
+        display: initial;
+    }
+
+    .header ul{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        border-top: 1px #111;
+    }
+
+    .header ul li{
+        width: 100%;
+    }
+
+    .header ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    .header ul li ul li{
+        background: #eee;
+    }
+
+    .header ul li ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    #Tickets{
+    text-align: center;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+
+    }
+    a.paypal-link{
+        width: 120px;
+        height: 40px;
+        font-weight: bolder;
+        font-size: 18px;
+        border: 2px solid white;}
+
+
+#Partytext{
+    font-size: 12px;
+    display: block;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#Partytext img{
+    object-fit: cover;
+    align-items: center;
+    width: 80%
+}
+
+.Einladung img{
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding-top: 20px;
+
+}
+.Einladung2 img{
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding-top: 20px;
+}
+.Einladung3 img{
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding-top: 20px;
+}
+
+.Einladung3{
+    text-align: center;
+    font-size: 11px;
+}
+
+.maps-container{
+    flex-wrap: wrap;    
+    height: 400px;
+
+}
+
+.maps-text{
+    width: 100%;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+     margin-right: 10px;
+}
+
+.maps-image{
+    height: 150px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: 40px;
+    margin-bottom: auto;
+
+}
+
+.header a::after{
+    display: none;
+}
+
+.header{
+    left: 5px;
+    position: fixed;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    }
+
+.sticky{
+    padding: 5px 10px;
+    background-color: #fff;
+    left: 0px;
+    transition: 0.6s;
+    top: 0px;
+
+}
+
+.header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header ul li{
+    position: relative;
+    list-style: none;
+
+}
+.header ul li a{
+    position: relative;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.6s;
+
+}
+
+.header a::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.header a:hover::after{
+    width: 110%;
+}
+
+.logo{
+    position: relative;
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-size: 32px;
+    text-shadow: 0 0 8px white ;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.sticky ul li a{
+    color: #111;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.sticky .logo{
+    -webkit-filter: invert(1);
+}
+
+#Einladung img{
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+#Partytext{
+    width: 95%;
+}
+
+.maps-image{
+    border: 0;
+    height: 150px;
+    width: 100%;
+    margin-right: 5px;
+    margin-top: 0px;
+    margin-bottom: auto;
+
+}
+}
