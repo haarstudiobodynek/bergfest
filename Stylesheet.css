@@ -164,7 +164,8 @@ body{
 
 #Partytext img{
     object-fit: cover;
-    width: 80%
+    width: 80%;
+    max-width: 81%;
 }
 
 #Tickets h1{
